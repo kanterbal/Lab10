@@ -16,23 +16,24 @@ namespace Ex1
             Console.ReadKey();
         }
 
-        class Ugol
+        
+    }
+    class Ugol
+    {
+        public int Gradus { get; set; }
+        public int Min { get; set; }
+        public int Sec { get; set; }
+
+        public Ugol(int gradus, int min, int sec)
         {
-            public int Gradus { get; set; }
-            public int Min { get; set; }
-            public int Sec { get; set; }
+            Gradus = gradus;
+            Min = min;
+            Sec = sec;
+        }
 
-            public Ugol (int gradus, int min, int sec)
-            {
-                Gradus = gradus;
-                Min = min;
-                Sec = sec;
-            }
-
-            public void ToRadians ()
-            {
-                Console.WriteLine("Ugol {0} gradusov = {1:F2} radianov", Gradus, (Gradus*Math.PI)/180);
-            }
+        public void ToRadians()
+        {
+            Console.WriteLine("Ugol {0} gradusov = {1:F2} radianov", Gradus, (Gradus * Math.PI) / 180);
         }
     }
 }
